@@ -1,9 +1,10 @@
 import streamlit as st
+import pandas as pd
 
-st.title('Hello World!')
+st.title('Marvel Universe: Civil War')
 
-st.markdown('# My first app')
+st.markdown('## Marvel_characters_info raw data')
 
-st.markdown('## My Second app')
+info = pd.read_csv('data/marvel_characters_info.csv')
 
-st.markdown('### My Third app')
+st.dataframe(info)
