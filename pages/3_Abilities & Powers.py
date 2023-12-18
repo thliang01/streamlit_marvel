@@ -36,9 +36,6 @@ fig = px.strip(grouped_stats,
 
 # Update the layout
 fig.update_layout(
-    plot_bgcolor='black',
-    paper_bgcolor='black',
-    legend_bgcolor='black',
     legend_title='Abilities & Powers',
     xaxis=dict(tickfont=dict(color='white')),
     yaxis=dict(tickfont=dict()),
