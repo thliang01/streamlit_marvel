@@ -15,13 +15,6 @@ repos:
         - id: debug-statements         # check for python debug statements (import pdb, breakpoint, etc.)
         - id: detect-private-key       # checks for private keys (BEGIN X PRIVATE KEY, etc.)
 
-  # black python autoformatting
-  - repo: https://github.com/psf/black
-    rev: 23.12.0
-    hooks:
-      - id: black
-    # additional configuration of black in pyproject.toml
-
 
   # flake8 python linter with all the fixins
   - repo: https://github.com/PyCQA/flake8
