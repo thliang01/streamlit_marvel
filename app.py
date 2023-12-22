@@ -1,6 +1,8 @@
+"""
+This module is used for main page for visualizing data related to the Marvel Universe: Civil War.
+"""
+
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
 
 st.sidebar.success("Select a data visualization to view.")
 
