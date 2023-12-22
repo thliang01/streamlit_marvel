@@ -30,7 +30,7 @@ ax.plot(chart_data["Year"], chart_data["n"], color="red", linestyle="--")
 st.pyplot(fig)
 
 # Create Code Block
-code_block = """
+CODE_BLOCK = """
 # Import libraries
 import streamlit as st
 import pandas as pd
@@ -48,4 +48,4 @@ plt.fill_between(chart_data["Year"], chart_data["n"], color="royalblue", alpha=0
 plt.plot(chart_data["Year"], chart_data["n"], color="red", linestyle="--")
 """
 
-st.code(code_block, language="python")
+st.code(CODE_BLOCK, language="python")
