@@ -46,3 +46,16 @@ repos:
     rev: v1.7.1
     hooks:
       - id: mypy
+
+  # Ruff for linting and formatting Python code
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+    rev: v0.1.9
+    hooks:
+    # Run the linter.
+    - id: ruff
+      types_or: [ python, pyi, jupyter ]
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format
+      types_or: [ python, pyi, jupyter ]
