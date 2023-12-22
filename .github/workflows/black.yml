@@ -7,9 +7,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - name: hello
-              run: |
-                echo "hello eorld"
             - name: black
               uses: psf/black@stable
               with:
