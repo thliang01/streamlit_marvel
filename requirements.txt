@@ -3,6 +3,7 @@ black
 flake8
 mypy
 shellcheck-py
+ruff
 streamlit
 pandas
 matplotlib
