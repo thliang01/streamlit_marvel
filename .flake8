@@ -3,7 +3,7 @@ select = ANN,B,B9,BLK,C,D,E,F,I,S,W
   # only check selected error codes
 max-complexity = 12
   # C9 - flake8 McCabe Complexity checker -- threshold
-max-line-length = 120
+max-line-length = 100
   # E501 - flake8 -- line length too long, actually handled by black
 extend-ignore =
   # E W - flake8 PEP style check
