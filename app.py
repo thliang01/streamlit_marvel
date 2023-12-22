@@ -4,10 +4,10 @@ This module is used for main page for visualizing data related to the Marvel Uni
 
 import streamlit as st
 
-st.sidebar.success("Select a data visualization to view.")
+st.sidebar.success('Select a data visualization to view.')
 
-st.title("Marvel Universe: Civil War")
+st.title('Marvel Universe: Civil War')
 
-st.markdown("## Marvel Universe Analysis")
+st.markdown('## Marvel Universe Analysis')
 
-st.image("images/hero.gif")
+st.image('images/hero.gif')
