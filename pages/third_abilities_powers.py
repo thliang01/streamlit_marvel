@@ -55,6 +55,7 @@ fig.update_yaxes(title_text="Power")
 
 # Display the plot
 # fig.show()
+st.markdown("### Display the plot")
 st.plotly_chart(fig)
 
 # Create Code Block
