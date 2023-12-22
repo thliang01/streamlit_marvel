@@ -6,8 +6,8 @@ import streamlit as st
 
 st.sidebar.success("Select a data visualization to view.")
 
-st.title('Marvel Universe: Civil War')
+st.title("Marvel Universe: Civil War")
 
-st.markdown('## Marvel Universe Analysis')
+st.markdown("## Marvel Universe Analysis")
 
-st.image('images/hero.gif')
+st.image("images/hero.gif")
