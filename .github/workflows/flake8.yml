@@ -16,4 +16,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
       - name: flake8 Lint
-        uses: py-actions/flake8@v2
+        uses: py-actions/flake8@v2.3.0
