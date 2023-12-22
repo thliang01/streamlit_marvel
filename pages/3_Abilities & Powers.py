@@ -1,3 +1,7 @@
+"""
+This module is used for visualizing
+the abilities and powers data in the Marvel Universe: Civil War data.
+"""
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -29,7 +33,7 @@ grouped_stats = melted_stats.groupby('Key').apply(lambda x: x.sort_values('Value
 fig = px.strip(grouped_stats,
                 x='Key',
                 y='Value',
-                color='Key', 
+                color='Key',
                 facet_col='Alignment',
                 facet_col_wrap=1,
                 title='Abilities & Powers',)
@@ -37,10 +41,10 @@ fig = px.strip(grouped_stats,
 # Update the layout
 fig.update_layout(
     legend_title='Abilities & Powers',
-    xaxis=dict(tickfont=dict(color='white')),
-    yaxis=dict(tickfont=dict()),
-    title=dict(font=dict(color='seagreen',)),
-    font=dict(color='white'),
+    xaxis={"tickfont": {"color": 'white'}},
+    yaxis={"tickfont": {}},
+    title={"font": {"color": 'seagreen'}},
+    font={"color": 'white'},
 )
 fig.update_xaxes(title_text='Abilities')
 fig.update_yaxes(title_text='Power')
