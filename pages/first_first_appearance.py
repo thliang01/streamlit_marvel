@@ -7,22 +7,18 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-st.title('First Apperances')
-st.markdown('### Marvel_wiki raw data')
+st.title("First Apperances")
+st.markdown("### Marvel_wiki raw data")
 
-wiki = pd.read_csv('data/marvel-wikia-data.csv')
+wiki = pd.read_csv("data/marvel-wikia-data.csv")
 
 st.dataframe(wiki)
 
-st.markdown('### Plotting the number of first appearance by year')
+st.markdown("### Plotting the number of first appearance by year")
 # Group by Year and count
-chart_data = wiki.groupby('Year').size().reset_index(name='n')
+chart_data = wiki.groupby("Year").size().reset_index(name="n")
 
 # Create the plot
 plt.figure(figsize=(10, 6))
-plt.fill_between(chart_data['Year'],
-                 chart_data['n'],
-                 color='royalblue',
-                 alpha=0.8)
-plt.plot(chart_data['Year'], chart_data['n'],
-         color='red', linestyle='--')
+plt.fill_between(chart_data["Year"], chart_data["n"], color="royalblue", alpha=0.8)
+plt.plot(chart_data["Year"], chart_data["n"], color="red", linestyle="--")
