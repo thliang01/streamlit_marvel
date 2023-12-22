@@ -1,0 +1,11 @@
+name: flake8
+
+on: [push]
+
+jobs:
+    black:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: flake8
+              uses: PyCQA/flake8@6.1.0
