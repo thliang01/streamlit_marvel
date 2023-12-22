@@ -59,7 +59,7 @@ st.markdown("### Display the plot")
 st.plotly_chart(fig)
 
 # Create Code Block
-code_block = """
+CODE_BLOCK = """
 # Import libraries
 import streamlit as st
 import pandas as pd
@@ -110,4 +110,4 @@ fig.update_yaxes(title_text="Power")
 st.plotly_chart(fig)
 """
 
-st.code(code_block, language="python")
+st.code(CODE_BLOCK, language="python")
