@@ -11,3 +11,9 @@ st.title('Marvel Universe: Civil War')
 st.markdown('## Marvel Universe Analysis')
 
 st.image('images/hero.gif')
+
+st.markdown('### First Apperances')
+
+st.markdown('#### Demograph')
+
+st.markdown('### Abilities & Powers')
