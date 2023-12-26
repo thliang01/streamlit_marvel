@@ -12,8 +12,8 @@ st.markdown('## Marvel Universe Analysis')
 
 st.image('images/hero.gif')
 
-st.markdown('### First Apperances')
+st.markdown('### First Apperances: [Link](https://marvel-viz.streamlit.app/first_appearance)')
 
-st.markdown('#### Demograph')
+st.markdown('#### Demograph: [Link](https://marvel-viz.streamlit.app/first_appearance)')
 
-st.markdown('### Abilities & Powers')
+st.markdown('### Abilities & Powers: [Link](https://marvel-viz.streamlit.app/first_appearance)')
