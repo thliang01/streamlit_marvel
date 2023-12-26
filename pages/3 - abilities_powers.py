@@ -49,7 +49,6 @@ fig.update_layout(
 	legend_title='Abilities & Powers',
 	xaxis={'tickfont': {'color': 'white'}},
 	yaxis={'tickfont': {}},
-	title={'font': {'color': 'seagreen'}},
 	font={'color': 'white'},
 )
 fig.update_xaxes(title_text='Abilities')
@@ -80,7 +79,8 @@ fig = px.box(
 	color='Alignment',
 	facet_col='Alignment',
 	facet_col_wrap=1,
-	color_discrete_sequence=['#C21E48', '#2C75CB', 'white', 'white'],
+	color_discrete_sequence=['#C21E48', '#2C75CB', 'white'],
+	title='Alignment & Values',
 )
 
 # Update the layout
