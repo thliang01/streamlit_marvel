@@ -66,6 +66,9 @@ filtered_stats = stats.drop(columns=['Name', 'Total']).query('Alignment != ""')
 # Reshape the data
 melted_stats = pd.melt(filtered_stats, id_vars=['Alignment'], var_name='Key', value_name='Value')
 
+# Drop the rows where Alignment is NaN
+melted_stats = melted_stats.dropna(subset=['Alignment'])
+
 # Modify the Alignment column
 melted_stats['Alignment'] = melted_stats['Alignment'].str.title()
 
