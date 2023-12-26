@@ -7,6 +7,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px  # type: ignore
 
+st.sidebar.success('Select a data visualization to view.')
+
 # Read the data
 stats = pd.read_csv('data/charcters_stats.csv')
 

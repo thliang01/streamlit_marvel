@@ -8,6 +8,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.sidebar.success('Select a data visualization to view.')
+
 st.title('First Apperances')
 st.markdown('### Marvel_wiki raw data')
 

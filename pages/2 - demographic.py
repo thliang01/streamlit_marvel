@@ -8,6 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+st.sidebar.success('Select a data visualization to view.')
+
 st.title('Demographic')
 st.markdown('### Plotting from the raw wiki data')
 
