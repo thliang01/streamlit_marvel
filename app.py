@@ -17,3 +17,5 @@ st.markdown('### First Apperances: [Link](https://marvel-viz.streamlit.app/first
 st.markdown('#### Demograph: [Link](https://marvel-viz.streamlit.app/demographic)')
 
 st.markdown('### Abilities & Powers: [Link](https://marvel-viz.streamlit.app/abilities_powers)')
+
+st.divider()
