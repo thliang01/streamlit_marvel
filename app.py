@@ -19,3 +19,9 @@ st.markdown('#### Demograph: [Link](https://marvel-viz.streamlit.app/demographic
 st.markdown('### Abilities & Powers: [Link](https://marvel-viz.streamlit.app/abilities_powers)')
 
 st.divider()
+
+st.markdown('## Civil War Analysis: Team Cap vs Team Iron Man')
+
+st.image('images/CapVSIronMan.jpeg')
+
+st.markdown('### Total Power: [Link](https://marvel-viz.streamlit.app/total_power)')
