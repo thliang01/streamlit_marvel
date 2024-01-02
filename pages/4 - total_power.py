@@ -133,3 +133,9 @@ fig.update_layout(
 # Display the plot
 st.plotly_chart(fig)
 """
+
+st.code(CODE_BLOCK)
+
+st.markdown('## Tableau Version')
+
+st.image('images/Dashboard for Total power of the team by characters.png')
