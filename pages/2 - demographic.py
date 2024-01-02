@@ -58,7 +58,7 @@ plt.title('Alignment / Sex')
 
 # Show the plot
 # plt.show()
-st.markdown('### PAlignment / Sex Plot')
+st.markdown('### Alignment / Sex Plot')
 st.pyplot(plt)
 
 # Prepare the data
@@ -164,3 +164,9 @@ st.pyplot(plt)
 """
 
 st.code(CODE_BLOCK_TWO, language='python')
+
+st.markdown('## Tableau Version')
+
+st.image('images/bar chart of _Gender vs. Alignment_.png')
+
+st.image('images/bar chart of Identity vs. Alignment.png')
