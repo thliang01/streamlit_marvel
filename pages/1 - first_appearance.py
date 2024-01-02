@@ -51,3 +51,7 @@ plt.plot(chart_data["Year"], chart_data["n"], color="red", linestyle="--")
 """
 
 st.code(CODE_BLOCK, language='python')
+
+st.markdown('## Tableau Version')
+
+st.image('images/area and trend chart of _Year of Appearance_.png')
