@@ -25,3 +25,5 @@ st.markdown('## Civil War Analysis: Team Cap vs Team Iron Man')
 st.image('images/CapVSIronMan.jpeg')
 
 st.markdown('### Total Power: [Link](https://marvel-viz.streamlit.app/total_power)')
+
+st.markdown('### Comparison: [Link](https://marvel-viz.streamlit.app/comparison)')
