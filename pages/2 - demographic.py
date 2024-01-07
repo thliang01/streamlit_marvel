@@ -19,6 +19,19 @@ wiki = pd.read_csv('data/marvel-wikia-data.csv')
 # Display the data
 st.dataframe(wiki)
 
+# Count the values
+identity_counts = wiki['ID'].value_counts()
+
+# Create a pie chart
+plt.figure(figsize=(10, 6))
+plt.pie(identity_counts, labels=identity_counts.index, autopct='%1.1f%%')
+plt.title('Identity Distribution')
+plt.show()
+
+# Display the plot in Streamlit
+st.markdown('### Identity Distribution')
+st.pyplot(plt)
+
 
 # Filter the data
 p1 = wiki[wiki['ALIGN'] != '']
@@ -88,6 +101,33 @@ plt.title('Identity / Alignment')
 # Show the plot
 st.markdown('### Identity / Alignment Plot')
 st.pyplot(plt)
+
+# Create Code Block for the Identity Distribution Plot
+CODE_BLOCK = """
+# Import libraries
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Read the data
+wiki = pd.read_csv('data/marvel-wikia-data.csv')
+
+# Count the values
+identity_counts = wiki['ID'].value_counts()
+
+# Create a pie chart
+plt.figure(figsize=(10, 6))
+plt.pie(identity_counts, labels=identity_counts.index, autopct='%1.1f%%')
+plt.title('Identity Distribution')
+plt.show()
+
+# Display the plot in Streamlit
+st.markdown('### Identity Distribution')
+st.pyplot(plt)
+"""
+
+st.code(CODE_BLOCK, language='python')
 
 # Create Code Block for the PAlignment / Sex Plot
 CODE_BLOCK = """
@@ -166,6 +206,8 @@ st.pyplot(plt)
 st.code(CODE_BLOCK_TWO, language='python')
 
 st.markdown('## Tableau Version')
+
+st.image('images/pie chart of Identity.png')
 
 st.image('images/bar chart of _Gender vs. Alignment_.png')
 
