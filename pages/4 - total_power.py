@@ -51,6 +51,7 @@ fig = px.bar(
 	orientation='h',
 	color_discrete_sequence=['#1849CA', '#AA0505'],
 	labels={'Value': 'Total', 'Name': 'Name'},
+	title='Total Power of the Team by Characters',
 )
 
 # Update the layout
@@ -114,7 +115,8 @@ fig = px.bar(
     color='Team',
     orientation='h',
     color_discrete_sequence=["#1849CA", "#AA0505"],
-    labels={'Value': 'Total', 'Name': 'Name'}
+    labels={'Value': 'Total', 'Name': 'Name'},
+    title='Total Power of the Team by Characters'
 )
 
 # Update the layout
